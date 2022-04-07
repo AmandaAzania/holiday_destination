@@ -5,8 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+    </style>
 </head>
 <body>
-    
+    <h1>My holiday destination</h1>
+
+    <p>Sweeden is a beautiful faminist country, it is my go to holiday destination.</p>
+    <div>
+    <img src="./images/HandLuggageOnly-14-3.webp" alt="a place" style="height: 400px; width: 400p;">
+    <img src="./images/HandLuggageOnly-8-4.webp" alt="a place" style="height: 400px; width: 400px;">
+    <img src="./images/HandLuggageOnly-9-3.webp" alt="a place" style="height: 400px; width: 400px;">
+    <img src="./images/HandLuggageOnly-6-3.webp" alt="a place" style="height: 400px; width: 400px;">
+
+    <h3>These are some of the reasons why I would like to visit this beautiful country</h3>
+
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Falsterbo</td>
+                <td>The beautiful houses</td>
+            </tr>
+            <tr class="active-row">
+                <td>Smögen</td>
+                <td>It is stunning and have amazing history</td>
+            </tr>
+            <tr>
+
+                <tr class="active-row">
+                    <td>Visby</td>
+                    <td>  It’ll be my starting point to explore the rest of Gotland island, too.</td>
+                </tr>
+
+                <tr class="active-row">
+                    <td>Sarek National Park</td>
+                    <td>It is the oldest park in all of Europe</td>
+                </tr>
+
+                <tr class="active-row">
+                    <td>Stockholm</td>
+                    <td>Stockholm is a vibrant and colourful city, with so many things to do once you’re here. In fact, I’d go as far as saying it’s one of the best.</td>
+                </tr>
+                
+        </tbody>
+    </table>
+
+
+</div>
 </body>
 </html>
